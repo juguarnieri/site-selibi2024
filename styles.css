@@ -101,6 +101,23 @@ nav ul li a:hover {
     .obra-card {
         flex-direction: column; /* Muda a direção dos cards de obras para coluna */
     }
+    .author-info p, 
+    .author-info h2 {
+        font-size: 14px;
+    }
+
+    .importance img {
+        max-width: 90%;
+    }
+
+    .fixed-image {
+        max-width: 200px;
+    }
+
+    .navigation-arrows {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 footer {
