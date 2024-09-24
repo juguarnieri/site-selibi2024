@@ -12,9 +12,7 @@ body {
 /* Header */
 header {
     position: relative;
-    top: 0;
     margin-bottom: 20px;
-    left: 0;
     width: 100%;
     background-color: #f07f2f;
     color: white;
@@ -67,6 +65,7 @@ p {
     color: #2a2929;
 }
 
+/* Imagens */
 .biography img,
 .importance img,
 .obra-image,
@@ -87,6 +86,7 @@ p {
     max-width: 1500px;
     margin: 0 auto;
 }
+
 .fixed-image {
     position: absolute;
     top: 20px;
@@ -103,6 +103,7 @@ section {
     margin-bottom: 10px;
 }
 
+/* Estilos para seções principais */
 #home, #contato, #sobre {
     background-color: #fff;
     border-radius: 8px;
@@ -127,7 +128,7 @@ section {
     margin-bottom: 20px;
 }
 
-/*footer*/
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -141,7 +142,80 @@ footer p {
     font-size: 1.5rem;
 }
 
-/*frase 1*/
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 5em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 4em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1.1em;
+    }
+
+    .fixed-image {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margem vertical para itens em coluna */
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 3em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Frase 1 */
 .book-section {
     display: flex;
     align-items: center;
@@ -156,11 +230,11 @@ footer p {
 }
 
 .vertical-divider {
-        width: 0.5rem; 
-        background-color: #f07f2f; 
-        height: 500px; 
-        align-self: stretch; 
-    }
+    width: 0.5rem; 
+    background-color: #f07f2f; 
+    height: 500px; 
+    align-self: stretch; 
+}
 
 .quote-container {
     text-align: justify;
@@ -194,8 +268,9 @@ footer p {
 .book-additional-image img:hover {
     transform: scale(1.05);
 }
-/*biografia*/
-.biography{
+
+/* Biografia */
+.biography {
     background-color: #ffffff;
     padding: 20px 20px 2% 20px; 
     margin: 5rem auto 0 auto; 
@@ -211,7 +286,6 @@ footer p {
 .biography h1 {
     color: #f7b684;
     font-size: 5rem; 
-
 }
 
 .biography h2 {
@@ -235,8 +309,6 @@ footer p {
     padding: 5px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out; 
-    padding: 10px; 
-    border-radius: 8px;
 }
 
 .biography img:hover {
@@ -251,6 +323,55 @@ footer p {
     margin: 1.5rem 0;
     font-style: italic;
 }
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .book-section {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        gap: 10px; /* Ajusta o espaçamento */
+    }
+
+    .vertical-divider {
+        height: auto; /* Diminui a altura em telas menores */
+    }
+
+    .quote-container {
+        max-width: 100%; /* Remove o max-width para telas menores */
+    }
+
+    .book-image img {
+        max-width: 90%; /* Ajusta a largura da imagem */
+    }
+
+    .biography {
+        padding: 10px; /* Ajusta o padding para telas menores */
+    }
+
+    .biography h1 {
+        font-size: 3.5rem; /* Diminui o tamanho do título */
+    }
+}
+
+@media (max-width: 768px) {
+    .biography h1 {
+        font-size: 2.5rem; /* Diminui ainda mais o tamanho do título */
+    }
+
+    .biography h2 {
+        font-size: 1.2rem; /* Ajusta o tamanho do subtítulo */
+    }
+
+    .biography img {
+        width: 100%; /* Ajusta a imagem para largura total */
+    }
+
+    .biography p {
+        font-size: 1em; /* Diminui o tamanho do texto */
+    }
+}
+
+
+/*obras*/
 
 #obras {
     display: flex;
@@ -268,8 +389,6 @@ footer p {
     flex-wrap: wrap; 
     justify-content: center;
 }
-
-/*obras*/
 
 .obra-card {
     width: 100%; 
@@ -559,7 +678,7 @@ footer p {
     border-right: 8px solid #fdd648;
     max-width: 1500px;
     margin-top: 3rem;
-    width: 90%; /* Ocupa 90% da largura do contêiner pai */
+    width: 90%; 
 }
 
 .author-info h3 {
@@ -573,15 +692,15 @@ footer p {
 }
 
 .author-photo {
-    width: 100%; /* Ocupa 100% da largura do contêiner */
-    max-width: 500px; /* Limita a largura máxima a 500px */
-    height: auto; /* Mantém a proporção da imagem */
-    aspect-ratio: 1 / 1; /* Garante que a imagem seja quadrada */
-    border-radius: 50%; /* Faz a imagem ser oval */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%; 
     border: 5px solid #fdd648;
     display: block;
-    margin: 20px auto; /* Centraliza a imagem */
-    object-fit: cover; /* Cobre o espaço disponível, mantendo a proporção */
+    margin: 20px auto; 
+    object-fit: cover; 
 }
 
 /*referencias*/
@@ -618,34 +737,34 @@ footer p {
     text-decoration: underline; 
 }
 
-/* Navegação */
-.navigation-arrows {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.arrow {
-    text-decoration: none;
-    font-size: 2rem;
-    color: #f77a20;
-    padding: 10px 30px; 
-    border: 2px solid #f77a20;
-    border-radius: 50px; 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.arrow:hover {
-    background-color: #f77a20;
-    color: #fff;
-    transform: scale(1.05); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
 /*responsividade*/
 
+
+@media (max-width: 1024px) {
+    .importance h1 { font-size: 4rem; } /* Ajuste para telas grandes */
+}
+
+@media (max-width: 768px) {
+    .importance h1 { font-size: 3.5rem; } /* Ajuste para telas médias */
+}
+
+@media (max-width: 480px) {
+    .importance h1 { font-size: 3rem; } /* Ajuste para telas pequenas */
+}
+
+/* Media Queries para a Seção de Autor */
+@media (max-width: 1024px) {
+    .author-info h1 { font-size: 4rem; } /* Ajuste para telas grandes */
+}
+
+@media (max-width: 768px) {
+    .author-info h1 { font-size: 3.5rem; } /* Ajuste para telas médias */
+}
+
+@media (max-width: 480px) {
+    .author-info h1 { font-size: 3rem; } /* Ajuste para telas pequenas */
+}
 
 @media (max-width: 1024px) {
     .obras-title h1 { font-size: 4rem; }
@@ -673,7 +792,6 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-    .importance h1 { font-size: 4rem; }
     .importance img { width: 90%; }
     .reflection-card h3 { font-size: 2rem; }
     .reflection-card p { font-size: 1.1em; }
@@ -682,14 +800,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .importance h1 { font-size: 3.5rem; }
     .importance { padding: 10px; }
     .reflection-card h3 { font-size: 1.8rem; }
     .poems-eli h3 { font-size: 2rem; }
 }
 
 @media (max-width: 480px) {
-    .importance h1 { font-size: 3rem; }
     .importance img { width: 100%; }
     .reflection-card h3 { font-size: 1.5rem; }
     .poems-eli h3 { font-size: 1.5rem; }
@@ -716,17 +832,12 @@ footer p {
 
 @media (max-width: 1024px) {
     .references h1 { font-size: 4rem; }
-    .arrow { font-size: 1.5rem; padding: 8px 20px; }
 }
 
 @media (max-width: 768px) {
     .references h1 { font-size: 3.5rem; }
-    .arrow { font-size: 1.2rem; padding: 6px 15px; }
-    .navigation-arrows { flex-direction: column; align-items: center; }
-    .arrow { margin: 5px 0; }
 }
 
 @media (max-width: 480px) {
     .references h1 { font-size: 4rem; }
-    .arrow { font-size: 1rem; padding: 5px 10px; }
 }
