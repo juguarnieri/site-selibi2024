@@ -118,15 +118,18 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
     }
-    .references li {
-        font-size: 14px; /* Ajuste do tamanho da fonte */
-        padding: 10px; /* Ajuste do padding */
+    .references {
+        padding: 15px; /* Menos espaçamento interno */
     }
-
+    
     .references h1 {
-        font-size: 24px; /* Ajuste do tamanho do título */
+        font-size: 3rem; /* Ajuste do tamanho do título em telas menores */
     }
-}
+    
+    .reference {
+        font-size: 1.2rem; /* Ajuste do tamanho da fonte das referências */
+    }
+    }
 
 footer {
     text-align: center;
@@ -604,34 +607,37 @@ section {
 }
 
 .references {
-    background: #f9f9f9;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-left: 8px solid #fdd648;
-    border-right: 8px solid #fdd648;
-    max-width: 1500px;
+    background: #f9f9f9; 
+    padding: 20px; 
+    margin: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    overflow: hidden; 
 }
 
 .references h1 {
-    color: #f7b684;
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 15px;
+    color: #f7b684; 
+    font-size: 5rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
 }
 
 .reference {
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 15px; 
+    line-height: 1.5; 
 }
 .reference a {
-    color: #001aff;
-    text-decoration: none;
+    color: #001aff; 
+    text-decoration: none; 
 }
+
 .reference a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
+
 .navigation-arrows {
     display: flex;
     justify-content: space-between;
