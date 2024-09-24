@@ -39,8 +39,8 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: right; /* Mantém a justificação à direita */
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    justify-content: right; 
+    flex-wrap: wrap; 
 }
 
 nav ul li {
@@ -129,7 +129,7 @@ nav ul li a:hover {
     .reference {
         font-size: 1.2rem; /* Ajuste do tamanho da fonte das referências */
     }
-    }
+}
 
 footer {
     text-align: center;
