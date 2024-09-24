@@ -1,0 +1,633 @@
+body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4 url('img/estrelaslaranja.webp') center repeat; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f07f2f;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px; 
+}
+
+main {
+    margin-top: 150px; 
+    padding: 20px; 
+    text-align: justify; 
+}
+
+h1 {
+    margin: 0;
+    text-align: center; 
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+    color: #2a2929;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right; /* Mantém a justificação à direita */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #f7b684;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduzindo o padding do cabeçalho em telas menores */
+        font-size: 18px; /* Ajustando o tamanho da fonte */
+    }
+
+    nav ul {
+        justify-content: center; /* Centralizando o menu em telas pequenas */
+        flex-direction: column; /* Muda a direção do menu para coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Ajustando o espaçamento entre os itens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduzindo o tamanho do título */
+    }
+
+    p {
+        font-size: 1.1em; /* Ajustando o tamanho do texto */
+    }
+
+    .book-section {
+        flex-direction: column; /* Muda a direção da seção de livros para coluna */
+    }
+
+    .quote-container {
+        text-align: center; /* Centraliza o texto das citações */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+
+    .biography img {
+        width: 90%; /* Ajusta a largura da imagem da biografia */
+    }
+
+    .obra-card {
+        flex-direction: column; /* Muda a direção dos cards de obras para coluna */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f07f2f;
+    color: white;
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+}
+
+footer p{
+    color: #f0f0f0;
+    font-size: 2rem;
+}
+.fixed-image {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fdd648;
+    z-index: 1000;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#home, #contato, #sobre {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 5rem auto 0;
+    max-width: 1500px;
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+}
+
+#home h1, #contato h1, #sobre h1 {
+    font-size: 7em;
+    color: #f7b684;
+    margin-bottom: 10px;
+}
+
+#home p, #contato p, #sobre p {
+    font-size: 1.4em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.book-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 1500px; 
+    gap: 20px; 
+}
+
+.vertical-divider {
+        width: 0.5rem; 
+        background-color: #f07f2f; 
+        height: 500px; 
+        align-self: stretch; 
+    }
+
+.quote-container {
+    text-align: justify;
+    flex: 1;
+    max-width: 500px;
+}
+
+.quote {
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 0.8em; 
+    margin-top: 10px; 
+    font-style: italic; 
+}
+
+.book-image img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 430px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-image img:hover,
+.book-additional-image img:hover {
+    transform: scale(1.05);
+}
+
+.biography{
+    background-color: #ffffff;
+    padding: 20px 20px 2% 20px; 
+    margin: 5rem auto 0 auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+    text-align: justify; 
+    font-size: 1.3em;
+}
+
+.biography h1 {
+    color: #f7b684;
+    font-size: 5rem; 
+}
+
+.biography h2 {
+    font-size: 1.4rem;
+    color: #021224;
+    margin-bottom: 1rem;
+}
+
+.biography p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+}
+
+.biography img {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    display: block;
+    margin: 3.5rem auto; 
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; 
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+.biography img:hover {
+    transform: scale(1.1);
+}
+
+.biography blockquote {
+    background-color: #f4f4f4;
+    border-left: 4px solid #00254e;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.obras-title {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 1500px; 
+    margin: auto; 
+    text-align: center; 
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+}
+
+.obras-title h1 {
+    color: #f7b684; 
+    font-size: 5rem;
+    margin: 0; 
+}
+
+#obras {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.obra-card {
+    width: 100%; 
+    max-width: 1550px; 
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.3s ease-in-out; 
+    font-size: 1.3rem;
+    padding: 15px; 
+    box-sizing: border-box; 
+    margin-bottom: 3rem;
+}
+
+.obra-card:hover {
+    transform: scale(1.05); 
+}
+
+.obra-image {
+    width: 80%; 
+    max-width: 400px; 
+    height: auto; 
+    margin-top: 30px;
+    margin-bottom: 15px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.obra-card:hover .character-image {
+    transform: scale(1.1); 
+}
+
+.obra-content {
+    width: 100%;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    flex-grow: 1; 
+    align-items: flex-start; 
+}
+
+.obra-text {
+    flex-grow: 1; 
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+
+.informacoes {
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+.obra-card h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    padding: 25px;
+    background-color: #fdd6486a; 
+    width: 100%;
+    text-align: center; 
+    color: #f77a20;
+}
+
+.sinopse-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #ffa260;
+}
+
+.obra-card p {
+    margin: 0; 
+    padding: 10px 0; 
+    line-height: 1.6;
+    text-align: justify; 
+    color: #333; 
+    width: 100%;
+}
+
+#obras img {
+    max-width: 100%;
+    width: 500px;
+    height: auto; 
+    display: block; 
+    border: 1px solid #ddd; 
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    margin: 3.5rem auto; 
+}
+
+#obras img:hover {
+    transform: scale(1.1); 
+}
+
+.importance {
+    background-color: #f9f9f9;
+    padding: 20px 20px 2% 20px; 
+    margin: 5rem auto 0 auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+    text-align: justify; 
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.importance h1 {
+    color: #f7b684;
+    font-size: 5rem; 
+}
+
+.importance ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin: 0 0 15px;
+}
+
+.importance li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.importance img {
+    max-width: 100%;
+    height: auto;
+    width: 850px;
+    display: block;
+    margin: 3.5rem auto; 
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; 
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+.importance img:hover {
+    transform: scale(1.1);
+}
+
+.reflection {
+    background: #fff; 
+    padding: 20px; 
+    margin: 3rem auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    font-size: 1.3rem; 
+    text-align: center; 
+}
+
+.reflection-card {
+    margin-bottom: 2rem; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.reflection-card:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.title h1 {
+    color:#f7b684;
+    font-size: 5rem;
+} 
+
+.reflection-card h3 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #000000;
+}
+
+.reflection-card p {
+    font-size: 1.2em; 
+    color: #333; 
+    margin-bottom: 0; 
+    line-height: 1.6; 
+}
+
+.reflection-card img {
+    width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 1rem;
+}
+
+.poems {
+    background: #fff; 
+    padding: 20px; 
+    margin: 3rem auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    font-size: 1.3rem;  
+    margin-bottom: 2rem;
+}
+
+.poems-eli {
+    margin: 4rem 0; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.poems-eli:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.poems-eli h3 {
+    font-size: 3rem; 
+    margin-bottom: 1rem; 
+    color: #f07f2f;
+}
+
+.poems-eli pre {
+    font-size: 1.2em; 
+    color: #333; 
+    margin-bottom: 1rem; 
+    line-height: 1.6; 
+    text-align: left;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.poems-eli img {
+    display: block; 
+    margin: 2rem auto 0; 
+    width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.author-info {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+    margin-top: 3rem;
+}
+
+.author-info h3 {
+    margin-bottom: 20px;
+    color: #00254e;
+}
+
+.author-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.author-photo {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid #fdd648;
+    display: block;
+    margin-bottom: 20px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.references {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+}
+
+.references h1 {
+    color: #f7b684;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reference {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.reference a {
+    color: #001aff;
+    text-decoration: none;
+}
+.reference a:hover {
+    text-decoration: underline;
+}
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.arrow {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #f77a20;
+    padding: 10px 30px; 
+    border: 2px solid #f77a20;
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.arrow:hover {
+    background-color: #f77a20;
+    color: #fff;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
