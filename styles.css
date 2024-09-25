@@ -48,9 +48,9 @@ nav ul li a:hover {
 
 /* Main */
 main {
-    margin-top: 150px;
+    margin-top: 15px;
     padding: 20px;
-    text-align: justify;
+    text-align: justify;  
 }
 
 h1 {
@@ -74,7 +74,6 @@ p {
     height: auto;
 }
 
-/* Layout geral */
 #home,
 #contato,
 #sobre,
@@ -141,79 +140,6 @@ footer p {
     color: #f0f0f0;
     font-size: 1.5rem;
 }
-
-/* Media Queries para Responsividade */
-@media (max-width: 1200px) {
-    header {
-        padding: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-    }
-
-    #home h1, #contato h1, #sobre h1 {
-        font-size: 5em;
-    }
-
-    #home p, #contato p, #sobre p {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    #home h1, #contato h1, #sobre h1 {
-        font-size: 4em;
-    }
-
-    #home p, #contato p, #sobre p {
-        font-size: 1.1em;
-    }
-
-    .fixed-image {
-        width: 80px;
-        height: 80px;
-        top: 10px;
-        left: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Margem vertical para itens em coluna */
-    }
-
-    #home h1, #contato h1, #sobre h1 {
-        font-size: 3em;
-    }
-
-    #home p, #contato p, #sobre p {
-        font-size: 1em;
-    }
-
-    footer p {
-        font-size: 1.2rem;
-    }
-}
-
 
 /* Frase 1 */
 .book-section {
@@ -323,55 +249,7 @@ footer p {
     font-style: italic;
 }
 
-/* Media Queries para Responsividade */
-@media (max-width: 1200px) {
-    .book-section {
-        flex-direction: column; /* Muda para coluna em telas menores */
-        gap: 10px; /* Ajusta o espaçamento */
-    }
-
-    .vertical-divider {
-        height: auto; /* Diminui a altura em telas menores */
-    }
-
-    .quote-container {
-        max-width: 100%; /* Remove o max-width para telas menores */
-    }
-
-    .book-image img {
-        max-width: 90%; /* Ajusta a largura da imagem */
-    }
-
-    .biography {
-        padding: 10px; /* Ajusta o padding para telas menores */
-    }
-
-    .biography h1 {
-        font-size: 3.5rem; /* Diminui o tamanho do título */
-    }
-}
-
-@media (max-width: 768px) {
-    .biography h1 {
-        font-size: 2.5rem; /* Diminui ainda mais o tamanho do título */
-    }
-
-    .biography h2 {
-        font-size: 1.2rem; /* Ajusta o tamanho do subtítulo */
-    }
-
-    .biography img {
-        width: 100%; /* Ajusta a imagem para largura total */
-    }
-
-    .biography p {
-        font-size: 1em; /* Diminui o tamanho do texto */
-    }
-}
-
-
 /*obras*/
-
 #obras {
     display: flex;
     flex-direction: column; 
@@ -607,7 +485,333 @@ footer p {
     transform: scale(1.1);
 }
 
-/* Media Queries para Responsividade */
+/*frases*/
+.reflection {
+    background: #fff; 
+    padding: 20px; 
+    margin: 3rem auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    font-size: 1.3rem; 
+    text-align: center; 
+}
+
+.reflection-card {
+    margin-bottom: 2rem; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.reflection-card:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.title h1 {
+    color: #f7b684;
+    font-size: 5rem;
+} 
+
+.reflection-card h3 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #000000;
+}
+
+.reflection-card p {
+    font-size: 1.2em; 
+    color: #333; 
+    margin-bottom: 0; 
+    line-height: 1.6; 
+}
+
+.reflection-card img {
+    width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 1rem;
+}
+
+/*poesias*/
+.poems {
+    background: #fff; 
+    padding: 20px; 
+    margin: 3rem auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    font-size: 1.3rem;  
+    margin-bottom: 2rem;
+}
+
+.poems-eli {
+    margin: 4rem 0; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.poems-eli h3 {
+    font-size: 3rem; 
+    margin-bottom: 1rem; 
+    color: #f07f2f;
+    line-height: 1.2; 
+}
+
+.poems-eli pre {
+    font-size: 1.2em; 
+    color: #333; 
+    margin-bottom: 1rem; 
+    line-height: 1.6; 
+    text-align: left;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    white-space: pre-wrap; 
+}
+
+.poems-eli img {
+    display: block; 
+    margin: 2rem auto 0; 
+    width: 100%; 
+    max-width: 800px; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+/*autor*/
+.author-info h1 {
+    margin-bottom: 20px;
+    color: #f7b684;
+    font-size: 4rem; /* Tamanho padrão para desktop */
+}
+
+.author-info {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+    margin-top: 3rem;
+    width: 90%; 
+}
+
+.author-info h3 {
+    margin-bottom: 20px;
+    color: #00254e;
+}
+
+.author-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.author-photo {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%; 
+    border: 5px solid #fdd648;
+    display: block;
+    margin: 20px auto; 
+    object-fit: cover; 
+}
+
+/*referencias*/
+.references {
+    background: #f9f9f9; 
+    padding: 20px; 
+    margin: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648; 
+    border-right: 8px solid #fdd648; 
+    max-width: 1500px; 
+    overflow: hidden; 
+}
+
+.references h1 {
+    color: #f7b684; 
+    font-size: 5rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+}
+
+.reference {
+    margin-bottom: 15px; 
+    line-height: 1.5; 
+}
+
+.reference a {
+    color: #001aff; 
+    text-decoration: none; 
+}
+
+.reference a:hover {
+    text-decoration: underline; 
+}
+
+.author-info h1 {
+    margin-bottom: 20px;
+    color: #f7b684;
+    font-size: 4rem; /* Tamanho padrão para desktop */
+}
+
+/*responsividade*/
+@media (max-width: 1200px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 5em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 4em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1.1em;
+    }
+
+    .fixed-image {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    #home h1, #contato h1, #sobre h1 {
+        font-size: 3em;
+    }
+
+    #home p, #contato p, #sobre p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1200px) {
+    .book-section {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .vertical-divider {
+        height: auto; 
+    }
+
+    .quote-container {
+        max-width: 100%; 
+    }
+
+    .book-image img {
+        max-width: 90%; 
+    }
+
+    .biography {
+        padding: 10px; 
+    }
+
+    .biography h1 {
+        font-size: 3.5rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .biography h1 {
+        font-size: 2.5rem; 
+    }
+
+    .biography h2 {
+        font-size: 1.2rem; 
+    }
+
+    .biography img {
+        width: 100%; 
+    }
+
+    .biography p {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .obras-title h1 { font-size: 4rem; }
+    .obra-card { max-width: 95%; padding: 10px; }
+    .obra-image { width: 90%; }
+    .obra-card h2 { font-size: 2rem; }
+    .sinopse-title { font-size: 2rem; }
+}
+
+@media (max-width: 768px) {
+    .obras-title h1 { font-size: 3.5rem; }
+    .obra-card { max-width: 100%; padding: 10px; }
+    .obra-image { width: 85%; }
+    .obra-card h2 { font-size: 1.8rem; }
+    .sinopse-title { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+    .obras-title h1 { font-size: 3rem; }
+    .obra-card { max-width: 100%; padding: 8px; }
+    .obra-image { width: 100%; }
+    .obra-card h2 { font-size: 1.5rem; }
+    .sinopse-title { font-size: 1.5rem; }
+    .obra-card p { font-size: 1rem; }
+}
 @media (max-width: 1200px) {
     .importance {
         padding: 15px;
@@ -665,60 +869,6 @@ footer p {
         font-size: 0.8em; 
     }
 }
-
-/*frases*/
-.reflection {
-    background: #fff; 
-    padding: 20px; 
-    margin: 3rem auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-left: 8px solid #fdd648; 
-    border-right: 8px solid #fdd648; 
-    max-width: 1500px; 
-    font-size: 1.3rem; 
-    text-align: center; 
-}
-
-.reflection-card {
-    margin-bottom: 2rem; 
-    padding: 20px; 
-    border-radius: 8px; 
-    background: #f9f9f9; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-.reflection-card:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-}
-
-.title h1 {
-    color: #f7b684;
-    font-size: 5rem;
-} 
-
-.reflection-card h3 {
-    font-size: 2.5rem; 
-    margin-bottom: 1rem; 
-    color: #000000;
-}
-
-.reflection-card p {
-    font-size: 1.2em; 
-    color: #333; 
-    margin-bottom: 0; 
-    line-height: 1.6; 
-}
-
-.reflection-card img {
-    width: 80%; 
-    height: auto; 
-    border-radius: 8px; 
-    margin-top: 1rem;
-}
-
 @media (max-width: 1200px) {
     .reflection {
         padding: 15px; 
@@ -809,58 +959,7 @@ footer p {
     }
 }
 
-/*poesias*/
-.poems {
-    background: #fff; 
-    padding: 20px; 
-    margin: 3rem auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-left: 8px solid #fdd648; 
-    border-right: 8px solid #fdd648; 
-    max-width: 1500px; 
-    font-size: 1.3rem;  
-    margin-bottom: 2rem;
-}
 
-.poems-eli {
-    margin: 4rem 0; 
-    padding: 20px; 
-    border-radius: 8px; 
-    background: #f9f9f9; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    width: 100%; 
-    box-sizing: border-box; 
-}
-
-.poems-eli h3 {
-    font-size: 3rem; 
-    margin-bottom: 1rem; 
-    color: #f07f2f;
-    line-height: 1.2; 
-}
-
-.poems-eli pre {
-    font-size: 1.2em; 
-    color: #333; 
-    margin-bottom: 1rem; 
-    line-height: 1.6; 
-    text-align: left;
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-    white-space: pre-wrap; 
-}
-
-.poems-eli img {
-    display: block; 
-    margin: 2rem auto 0; 
-    width: 100%; 
-    max-width: 800px; 
-    height: 400px; 
-    object-fit: cover;
-    border-radius: 8px; 
-}
-/* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     .poems {
         padding: 15px; 
@@ -931,195 +1030,82 @@ footer p {
         margin: 1rem auto; 
     }
 }
-
-/*autor*/
-
-.author-info h1 {
-    margin-bottom: 20px;
-    color: #f7b684;
-    font-size: 4rem; /* Tamanho padrão para desktop */
-}
-
-.author-info {
-    background: #f9f9f9;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-left: 8px solid #fdd648;
-    border-right: 8px solid #fdd648;
-    max-width: 1500px;
-    margin-top: 3rem;
-    width: 90%; 
-}
-
-.author-info h3 {
-    margin-bottom: 20px;
-    color: #00254e;
-}
-
-.author-info p {
-    margin: 5px 0;
-    font-size: 1.2rem;
-}
-
-.author-photo {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
-    aspect-ratio: 1 / 1; 
-    border-radius: 50%; 
-    border: 5px solid #fdd648;
-    display: block;
-    margin: 20px auto; 
-    object-fit: cover; 
-}
-
-
 @media (max-width: 1200px) {
     .author-info h3 {
-        font-size: 2.5rem; /* Ajuste o tamanho do título */
+        font-size: 2.5rem; 
     }
 
     .author-info p {
-        font-size: 1.1rem; /* Ajuste o tamanho do texto */
+        font-size: 1.1rem; 
     }
 }
 
 @media (max-width: 992px) {
     .author-info {
-        padding: 15px; /* Menos padding em telas médias */
+        padding: 15px; 
     }
 
     .author-info h3 {
-        font-size: 2rem; /* Ajuste o tamanho do título */
+        font-size: 2rem; 
     }
 
     .author-info p {
-        font-size: 1rem; /* Ajuste o tamanho do texto */
+        font-size: 1rem; 
     }
 }
 
 @media (max-width: 768px) {
     .author-info {
-        margin-top: 2rem; /* Menos margem em telas pequenas */
+        margin-top: 2rem; 
     }
 
     .author-info h3 {
-        font-size: 1.8rem; /* Ajuste o tamanho do título */
+        font-size: 1.8rem; 
     }
 
     .author-info p {
-        font-size: 0.9rem; /* Ajuste o tamanho do texto */
+        font-size: 0.9rem; 
     }
 }
 
 @media (max-width: 576px) {
     .author-info {
-        padding: 10px; /* Menos padding em telas muito pequenas */
+        padding: 10px; 
     }
 
     .author-info h3 {
-        font-size: 1.5rem; /* Ajuste o tamanho do título */
+        font-size: 1.5rem; 
     }
 
     .author-info p {
-        font-size: 0.8rem; /* Ajuste o tamanho do texto */
+        font-size: 0.8rem; 
     }
 
     .author-photo {
-        margin: 10px auto; /* Menos margem para a foto */
+        margin: 10px auto; 
     }
-}
-
-/*referencias*/
-.references {
-    background: #f9f9f9; 
-    padding: 20px; 
-    margin: auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-left: 8px solid #fdd648; 
-    border-right: 8px solid #fdd648; 
-    max-width: 1500px; 
-    overflow: hidden; 
-}
-
-.references h1 {
-    color: #f7b684; 
-    font-size: 5rem; 
-    text-align: center; 
-    margin-bottom: 15px; 
-}
-
-.reference {
-    margin-bottom: 15px; 
-    line-height: 1.5; 
-}
-
-.reference a {
-    color: #001aff; 
-    text-decoration: none; 
-}
-
-.reference a:hover {
-    text-decoration: underline; 
-}
-
-.author-info h1 {
-    margin-bottom: 20px;
-    color: #f7b684;
-    font-size: 4rem; /* Tamanho padrão para desktop */
 }
 
 @media (max-width: 1200px) {
     .references h1 {
-        font-size: 4rem; /* Ajuste do tamanho do h1 em telas médias */
+        font-size: 4rem; 
     }
 }
 
 @media (max-width: 992px) {
     .references h1 {
-        font-size: 3rem; /* Ajuste do tamanho do h1 em telas menores */
+        font-size: 3rem; 
     }
 }
 
 @media (max-width: 768px) {
     .references h1 {
-        font-size: 2.5rem; /* Ajuste do tamanho do h1 em tablets */
+        font-size: 2.5rem; 
     }
 }
 
 @media (max-width: 576px) {
     .references h1 {
-        font-size: 2rem; /* Ajuste do tamanho do h1 em smartphones */
+        font-size: 2rem; 
     }
 }
-
-
-
-@media (max-width: 1024px) {
-    .obras-title h1 { font-size: 4rem; }
-    .obra-card { max-width: 95%; padding: 10px; }
-    .obra-image { width: 90%; }
-    .obra-card h2 { font-size: 2rem; }
-    .sinopse-title { font-size: 2rem; }
-}
-
-@media (max-width: 768px) {
-    .obras-title h1 { font-size: 3.5rem; }
-    .obra-card { max-width: 100%; padding: 10px; }
-    .obra-image { width: 85%; }
-    .obra-card h2 { font-size: 1.8rem; }
-    .sinopse-title { font-size: 1.8rem; }
-}
-
-@media (max-width: 480px) {
-    .obras-title h1 { font-size: 3rem; }
-    .obra-card { max-width: 100%; padding: 8px; }
-    .obra-image { width: 100%; }
-    .obra-card h2 { font-size: 1.5rem; }
-    .sinopse-title { font-size: 1.5rem; }
-    .obra-card p { font-size: 1rem; }
-}
-
