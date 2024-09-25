@@ -317,7 +317,6 @@ footer p {
 
 .biography blockquote {
     background-color: #f4f4f4;
-    border-left: 4px solid #00254e;
     padding: 1rem;
     font-size: 1.3rem;
     margin: 1.5rem 0;
@@ -562,6 +561,111 @@ footer p {
 .importance img:hover {
     transform: scale(1.1);
 }
+
+.importance {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 5rem auto 0 auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-left: 8px solid #fdd648;
+    border-right: 8px solid #fdd648;
+    max-width: 1500px;
+    text-align: justify; 
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.importance h1 {
+    color: #f7b684;
+    font-size: 5rem; 
+}
+
+.importance ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin: 0 0 15px;
+}
+
+.importance li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.importance img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 3.5rem auto; 
+    border: 1px solid #ddd;
+    padding: 10px; 
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.importance img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .importance {
+        padding: 15px;
+    }
+
+    .importance h1 {
+        font-size: 4rem; 
+    }
+
+    .importance {
+        font-size: 1.1em; 
+    }
+}
+
+@media (max-width: 992px) {
+    .importance h1 {
+        font-size: 3rem; 
+    }
+
+    .importance {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 768px) {
+    .importance {
+        margin: 3rem auto; 
+        padding: 10px;
+    }
+
+    .importance h1 {
+        font-size: 2.5rem; 
+    }
+
+    .importance {
+        font-size: 0.9em; 
+    }
+
+    .importance img {
+        margin: 2rem auto; 
+    }
+}
+
+@media (max-width: 576px) {
+    .importance {
+        margin: 2rem auto; 
+        padding: 5px;
+    }
+
+    .importance h1 {
+        font-size: 2rem; 
+    }
+
+    .importance {
+        font-size: 0.8em; 
+    }
+}
+
 /*frases*/
 .reflection {
     background: #fff; 
@@ -615,6 +719,96 @@ footer p {
     margin-top: 1rem;
 }
 
+@media (max-width: 1200px) {
+    .reflection {
+        padding: 15px; 
+    }
+
+    .reflection-card {
+        padding: 15px; 
+    }
+
+    .title h1 {
+        font-size: 4rem; 
+    }
+
+    .reflection-card h3 {
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .reflection {
+        font-size: 1.1rem; 
+    }
+
+    .reflection-card {
+        margin-bottom: 1.5rem; 
+    }
+
+    .title h1 {
+        font-size: 3rem; 
+    }
+
+    .reflection-card h3 {
+        font-size: 1.8rem; 
+    }
+
+    .reflection-card p {
+        font-size: 1.1em; 
+    }
+}
+
+@media (max-width: 768px) {
+    .reflection {
+        margin: 2rem auto; 
+        padding: 10px; 
+    }
+
+    .reflection-card {
+        padding: 10px; 
+    }
+
+    .title h1 {
+        font-size: 2.5rem; 
+    }
+
+    .reflection-card h3 {
+        font-size: 1.5rem; 
+    }
+
+    .reflection-card p {
+        font-size: 1em; 
+    }
+
+    .reflection-card img {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .reflection {
+        margin: 1.5rem auto; 
+        padding: 5px; 
+    }
+
+    .title h1 {
+        font-size: 2rem; 
+    }
+
+    .reflection-card h3 {
+        font-size: 1.3rem; 
+    }
+
+    .reflection-card p {
+        font-size: 0.9em; 
+    }
+
+    .reflection-card img {
+        width: 95%; 
+    }
+}
+
 /*poesias*/
 .poems {
     background: #fff; 
@@ -666,8 +860,86 @@ footer p {
     object-fit: cover;
     border-radius: 8px; 
 }
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .poems {
+        padding: 15px; 
+    }
+
+    .poems-eli h3 {
+        font-size: 2.5rem; 
+    }
+
+    .poems-eli pre {
+        font-size: 1.1em; 
+    }
+}
+
+@media (max-width: 992px) {
+    .poems {
+        font-size: 1.1rem; 
+    }
+
+    .poems-eli h3 {
+        font-size: 2rem; 
+    }
+
+    .poems-eli pre {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 768px) {
+    .poems {
+        margin: 2rem auto; 
+        padding: 10px; 
+    }
+
+    .poems-eli {
+        margin: 2rem 0; 
+        padding: 15px; 
+    }
+
+    .poems-eli h3 {
+        font-size: 1.8rem; 
+    }
+
+    .poems-eli pre {
+        font-size: 0.9em; 
+    }
+
+    .poems-eli img {
+        margin: 1.5rem auto; 
+    }
+}
+
+@media (max-width: 576px) {
+    .poems {
+        margin: 1.5rem auto; 
+        padding: 5px; 
+    }
+
+    .poems-eli h3 {
+        font-size: 1.5rem; 
+    }
+
+    .poems-eli pre {
+        font-size: 0.8em; 
+    }
+
+    .poems-eli img {
+        margin: 1rem auto; 
+    }
+}
 
 /*autor*/
+
+.author-info h1 {
+    margin-bottom: 20px;
+    color: #f7b684;
+    font-size: 4rem; /* Tamanho padrão para desktop */
+}
+
 .author-info {
     background: #f9f9f9;
     padding: 20px;
@@ -701,6 +973,63 @@ footer p {
     display: block;
     margin: 20px auto; 
     object-fit: cover; 
+}
+
+
+@media (max-width: 1200px) {
+    .author-info h3 {
+        font-size: 2.5rem; /* Ajuste o tamanho do título */
+    }
+
+    .author-info p {
+        font-size: 1.1rem; /* Ajuste o tamanho do texto */
+    }
+}
+
+@media (max-width: 992px) {
+    .author-info {
+        padding: 15px; /* Menos padding em telas médias */
+    }
+
+    .author-info h3 {
+        font-size: 2rem; /* Ajuste o tamanho do título */
+    }
+
+    .author-info p {
+        font-size: 1rem; /* Ajuste o tamanho do texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .author-info {
+        margin-top: 2rem; /* Menos margem em telas pequenas */
+    }
+
+    .author-info h3 {
+        font-size: 1.8rem; /* Ajuste o tamanho do título */
+    }
+
+    .author-info p {
+        font-size: 0.9rem; /* Ajuste o tamanho do texto */
+    }
+}
+
+@media (max-width: 576px) {
+    .author-info {
+        padding: 10px; /* Menos padding em telas muito pequenas */
+    }
+
+    .author-info h3 {
+        font-size: 1.5rem; /* Ajuste o tamanho do título */
+    }
+
+    .author-info p {
+        font-size: 0.8rem; /* Ajuste o tamanho do texto */
+    }
+
+    .author-photo {
+        margin: 10px auto; /* Menos margem para a foto */
+    }
 }
 
 /*referencias*/
@@ -737,34 +1066,37 @@ footer p {
     text-decoration: underline; 
 }
 
+.author-info h1 {
+    margin-bottom: 20px;
+    color: #f7b684;
+    font-size: 4rem; /* Tamanho padrão para desktop */
+}
 
-/*responsividade*/
+@media (max-width: 1200px) {
+    .references h1 {
+        font-size: 4rem; /* Ajuste do tamanho do h1 em telas médias */
+    }
+}
 
-
-@media (max-width: 1024px) {
-    .importance h1 { font-size: 4rem; } /* Ajuste para telas grandes */
+@media (max-width: 992px) {
+    .references h1 {
+        font-size: 3rem; /* Ajuste do tamanho do h1 em telas menores */
+    }
 }
 
 @media (max-width: 768px) {
-    .importance h1 { font-size: 3.5rem; } /* Ajuste para telas médias */
+    .references h1 {
+        font-size: 2.5rem; /* Ajuste do tamanho do h1 em tablets */
+    }
 }
 
-@media (max-width: 480px) {
-    .importance h1 { font-size: 3rem; } /* Ajuste para telas pequenas */
+@media (max-width: 576px) {
+    .references h1 {
+        font-size: 2rem; /* Ajuste do tamanho do h1 em smartphones */
+    }
 }
 
-/* Media Queries para a Seção de Autor */
-@media (max-width: 1024px) {
-    .author-info h1 { font-size: 4rem; } /* Ajuste para telas grandes */
-}
 
-@media (max-width: 768px) {
-    .author-info h1 { font-size: 3.5rem; } /* Ajuste para telas médias */
-}
-
-@media (max-width: 480px) {
-    .author-info h1 { font-size: 3rem; } /* Ajuste para telas pequenas */
-}
 
 @media (max-width: 1024px) {
     .obras-title h1 { font-size: 4rem; }
@@ -791,53 +1123,3 @@ footer p {
     .obra-card p { font-size: 1rem; }
 }
 
-@media (max-width: 1024px) {
-    .importance img { width: 90%; }
-    .reflection-card h3 { font-size: 2rem; }
-    .reflection-card p { font-size: 1.1em; }
-    .poems-eli h3 { font-size: 2.5rem; }
-    .poems-eli pre { font-size: 1.1em; }
-}
-
-@media (max-width: 768px) {
-    .importance { padding: 10px; }
-    .reflection-card h3 { font-size: 1.8rem; }
-    .poems-eli h3 { font-size: 2rem; }
-}
-
-@media (max-width: 480px) {
-    .importance img { width: 100%; }
-    .reflection-card h3 { font-size: 1.5rem; }
-    .poems-eli h3 { font-size: 1.5rem; }
-    .reflection-card p { font-size: 1em; }
-    .poems-eli pre { font-size: 1em; }
-}
-
-@media (max-width: 1024px) {
-    .author-info { padding: 15px; }
-    .author-info h3 { font-size: 2rem; }
-    .author-info p { font-size: 1.1rem; }
-}
-
-@media (max-width: 768px) {
-    .author-info { padding: 15px; }
-    .author-info h3 { font-size: 1.8rem; }
-    .author-info p { font-size: 1rem; }
-}
-
-@media (max-width: 480px) {
-    .author-info h3 { font-size: 1.5rem; }
-    .author-info p { font-size: 0.9rem; }
-}
-
-@media (max-width: 1024px) {
-    .references h1 { font-size: 4rem; }
-}
-
-@media (max-width: 768px) {
-    .references h1 { font-size: 3.5rem; }
-}
-
-@media (max-width: 480px) {
-    .references h1 { font-size: 4rem; }
-}
